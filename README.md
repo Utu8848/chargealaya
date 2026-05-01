@@ -327,9 +327,9 @@ The database comes pre-loaded with realistic test data:
 
 ## Author
 
-Utsav Rai
-School of Architecture, Built Environment, Computing and Engineering
-Birmingham City University, Birmingham, United Kingdom
+**Utsav Rai**  
+School of Architecture, Built Environment, Computing and Engineering  
+Birmingham City University, Birmingham, United Kingdom  
 GitHub: https://github.com/Utu8848
 
 ---
