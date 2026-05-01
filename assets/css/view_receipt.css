@@ -1,0 +1,178 @@
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    /* Professional PDF Formatting */
+    body {
+        background: white !important;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    .card {
+        border: 2px solid #10b981 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+    }
+    
+    .card-header {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color: white !important;
+        padding: 20px !important;
+        border-bottom: 3px solid #047857 !important;
+    }
+    
+    .card-body {
+        padding: 40px !important;
+    }
+    
+    /* Header Styling */
+    .text-center h2 {
+        font-size: 32px !important;
+        font-weight: bold !important;
+        color: #10b981 !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .text-center .text-muted {
+        font-size: 14px !important;
+        color: #6b7280 !important;
+    }
+    
+    /* Section Headers */
+    h5 {
+        color: #1f2937 !important;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        border-bottom: 2px solid #10b981 !important;
+        padding-bottom: 8px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Tables */
+    .table {
+        border: 1px solid #e5e7eb !important;
+    }
+    
+    .table th {
+        background-color: #f3f4f6 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color: #1f2937 !important;
+        font-weight: 600 !important;
+        padding: 12px !important;
+        border: 1px solid #d1d5db !important;
+    }
+    
+    .table td {
+        padding: 10px !important;
+        border: 1px solid #e5e7eb !important;
+        color: #374151 !important;
+    }
+    
+    .table-active {
+        background-color: #ecfdf5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .table-active th,
+    .table-active td {
+        font-size: 18px !important;
+        font-weight: bold !important;
+        border: 2px solid #10b981 !important;
+    }
+    
+    /* Badge */
+    .badge {
+        background-color: #10b981 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color: white !important;
+        padding: 6px 12px !important;
+        border-radius: 6px !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Text Colors */
+    .text-success {
+        color: #10b981 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .text-muted {
+        color: #6b7280 !important;
+    }
+    
+    /* Icons */
+    .fas {
+        color: #10b981 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    /* Dividers */
+    hr {
+        border-top: 2px solid #e5e7eb !important;
+        margin: 25px 0 !important;
+    }
+    
+    /* Footer */
+    .text-center.mt-4 {
+        background-color: #f9fafb !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        padding: 20px !important;
+        border-radius: 8px !important;
+        border: 1px solid #e5e7eb !important;
+        margin-top: 30px !important;
+    }
+    
+    .text-center.mt-4 p {
+        margin-bottom: 8px !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Receipt Details Grid */
+    .row.mb-4 {
+        margin-bottom: 25px !important;
+    }
+    
+    .row.mb-4 .col-md-6 {
+        padding: 15px !important;
+    }
+    
+    .row.mb-4 p {
+        margin-bottom: 8px !important;
+        line-height: 1.8 !important;
+    }
+    
+    /* Strong Text */
+    strong {
+        color: #1f2937 !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Page Settings */
+    @page {
+        margin: 1cm;
+        size: A4;
+    }
+}
+
+/* Screen View - Keep original styling */
+@media screen {
+    .card {
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+}

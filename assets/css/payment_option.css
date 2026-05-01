@@ -1,0 +1,15 @@
+.payment-option .form-check-input {
+    display: none;
+}
+.payment-option .card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.payment-option .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.payment-option input:checked + label .card {
+    border: 2px solid #10b981;
+    background: #f0fdf4;
+}

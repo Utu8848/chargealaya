@@ -1,0 +1,275 @@
+/* ============================================
+   RECEIPT PDF STYLES
+   Professional receipt styling for PDF generation
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.receipt-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border: 2px solid #10b981;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.receipt-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #10b981;
+}
+
+.receipt-header h1 {
+    font-size: 36px;
+    color: #10b981;
+    margin-bottom: 5px;
+}
+
+.receipt-header .icon {
+    font-size: 24px;
+    color: #10b981;
+}
+
+.receipt-header p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #10b981;
+}
+
+/* Two Column Layout */
+.two-columns {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.column {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.column:first-child {
+    padding-left: 0;
+}
+
+.column:last-child {
+    padding-right: 0;
+}
+
+.info-row {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #374151;
+    display: inline-block;
+    min-width: 130px;
+}
+
+.info-value {
+    color: #1f2937;
+}
+
+.badge {
+    display: inline-block;
+    background: #10b981;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+table th {
+    background: #f3f4f6;
+    font-weight: 600;
+    color: #374151;
+}
+
+table td {
+    color: #1f2937;
+}
+
+.total-row {
+    background: #ecfdf5;
+    border: 2px solid #10b981 !important;
+}
+
+.total-row td {
+    font-weight: bold;
+    font-size: 16px;
+    color: #10b981;
+    border: 2px solid #10b981 !important;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Footer */
+.receipt-footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.receipt-footer p {
+    margin: 8px 0;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.receipt-footer strong {
+    color: #1f2937;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 20px 0;
+}
+
+/* Action Buttons */
+.action-buttons {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #e5e7eb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
+
+.btn-secondary {
+    background: #6b7280;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #4b5563;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .receipt-container {
+        border: 2px solid #10b981;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+    
+    .action-buttons {
+        display: none !important;
+    }
+    
+    .receipt-header h1,
+    .section-title,
+    .badge,
+    .total-row td,
+    table th {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .receipt-header {
+        border-bottom-color: #10b981 !important;
+    }
+    
+    .section-title {
+        border-bottom-color: #10b981 !important;
+    }
+    
+    .receipt-footer {
+        background: #f9fafb !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    table th {
+        background: #f3f4f6 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .total-row {
+        background: #ecfdf5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    @page {
+        margin: 1.5cm;
+        size: A4 portrait;
+    }
+}
