@@ -327,12 +327,10 @@ The database comes pre-loaded with realistic test data:
 
 ## Author
 
-Utsav Rai
-Student ID: 25123857
-Faculty of Computing, Engineering and the Built Environment
-Birmingham City University, Birmingham, United Kingdom
-GitHub: https://github.com/Utu8848
-
+**Utsav Rai**  
+Faculty of Computing, Engineering and the Built Environment  
+Birmingham City University, Birmingham, United Kingdom  
+[GitHub](https://github.com/Utu8848)
 ---
 
 ## License
